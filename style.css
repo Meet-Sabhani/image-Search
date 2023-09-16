@@ -125,6 +125,10 @@
   font-size: 2rem;
 }
 
+.about-info{
+  padding-top: 40px;
+}
+/* ============================================================================== */
 @media screen and (max-width: 480px) {
   #search-form {
     width: 90%;
