@@ -41,3 +41,31 @@ ShowMore.addEventListener("click", () => {
   page++;
   searchImage();
 });
+
+var sideMenu = document.getElementById("sideMenu");
+function openMenu() {
+  sideMenu.style.right = "0";
+}
+function closeMenu() {
+  sideMenu.style.right = "-200px";
+}
+
+
+// ========---------------cotect form------------
+
+const scriptURL = 'https://script.google.com/macros/s/AKfycbyx9GHDj9pByhGU8fJIIRAdFe_nd1nOuv37svUC0TBLdWKiGWWMsUfAO8m-QK6xe2nh/exec'
+const form = document.forms['submit-to-google-sheet']
+const msg = document.getElementById("msg")
+
+form.addEventListener('submit', e => {
+  e.preventDefault()
+  fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+    .then(response => {
+      msg.innerHTML = "Massage sent successfully"
+      setTimeout(function () {
+        msg.innerHTML = ""
+      }, 5000)
+      form.reset()
+    })
+    .catch(error => console.error('Error!', error.message))
+})

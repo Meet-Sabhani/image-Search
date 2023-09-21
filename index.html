@@ -7,74 +7,64 @@
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 </head>
 
 <body>
-    <div id="main">
-        <section class="container" id="navbar">
-            <nav class="navbar navbar-expand-lg">
-                <div class="container-fluid ">
-                    <a class="navbar-brand" href="#navbar" style="color: white;">Images</a>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse" id="navbarNav">
-                        <ul class="navbar-nav">
-                            <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="#" style="color: white;">Home</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#About" style="color: white;">about</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#images" style="color: white;">ImageSearch</a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <h1 class="logo"><span>Image</span>Search</h1>
+                <ul id="sideMenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#Contact">Content</a></li>
+                    <i class="ri-close-circle-line fas" onclick="closeMenu()" id="close"></i>
+                </ul>
+                <i class="ri-menu-line" onclick="openMenu()" id="close"></i>
             </nav>
-        </section>
-
-        <h1 id="images">image search</h1>
-        <form action="" id="search-form">
-            <input type="text" name="" id="search-box" placeholder="Search here">
-            <button id="search-btn"><i class="ri-search-2-line"></i>Search</button>
-        </form>
-        <div id="search-Result"></div>
-        <button id="show-more-btn">Show More</button>
-
-        <footer class="footer" id="About">
-            <h1>about Me</h1>
-            <p class="about-info">Hello Everyone, My Name is Meet Sabhani . I am Front-End Devlopar. Checkout my other
-                projects on my
-                Github.</p>
-            <h1>connect Me</h1>
-            <div class="social">
-                <a href="https://github.com/Meet-Sabhani" target="_blank"><i class="ri-github-fill"></i></a>
-                <a href="https://www.linkedin.com/in/meet-sabhani-548829196" target="_blank"><i
-                        class="ri-linkedin-box-fill"></i></a>
-                <a href="https://instagram.com/patel__meet__18?utm_source=qr&igshid=MzNlNGNkZWQ4Mg==" target="_blank"><i
-                        class="ri-instagram-line"></i></a>
-                <a href="https://www.facebook.com/profile.php?id=100068815945332&mibextid=ZbWKwL" target="_blank"><i
-                        class="ri-facebook-circle-fill"></i></a>
-                <a href="https://x.com/sabhani_meet?t=Tj6ZNShhwo1G6yYfjRT1qg&s=09" target="_blank"><i
-                        class="ri-twitter-x-fill"></i></a>
-                <a href="https://youtube.com/@meetsabhani?si=qWrB4vD3zDNC73Im"><i class="ri-youtube-fill"></i></a>
+            <div class="header-text">
+                <h1 id="images">image search</h1>
+                <form action="" id="search-form">
+                    <input type="text" name="" id="search-box" class="btn" placeholder="Search here">
+                    <button id="search-btn"><i class="ri-search-2-line"></i>Search</button>
+                </form>
+                <div id="search-Result"></div>
+                <button id="show-more-btn">Show More</button>
             </div>
-            <h3> Credit goes to <span><a href="https://unsplash.com/">unsplash.com</a></span></h3>
-            <h2>2023&copy; made with Meet Sabhani</h2>
-        </footer>
+        </div>
     </div>
 
-
-
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
-        crossorigin="anonymous"></script>
+    <div id="Contact">
+        <div class="container">
+          <div class="ContactRow">
+            <div class="Contact-left">
+              <h1 class="sub-titel contactMe">Contact Me</h1>
+              <p><i class="ri-mail-line"></i> meetsabhani18@gmail.com</p>
+              <p><i class="ri-phone-line"></i> +91 7016232400</p>
+              <div class="social-icons">
+                <a href="https://github.com/Meet-Sabhani" target="_blank"><i class="ri-github-fill"></i></a>
+                <a href="https://www.linkedin.com/in/meet-sabhani-548829196" target="_blank"><i
+                    class="ri-linkedin-box-fill"></i></a>
+                <a href="https://instagram.com/patel__meet__18?utm_source=qr&igshid=MzNlNGNkZWQ4Mg==" target="_blank"><i
+                    class="ri-instagram-line"></i></a>
+                <a href="https://www.facebook.com/profile.php?id=100068815945332&mibextid=ZbWKwL" target="_blank"><i
+                    class="ri-facebook-circle-fill"></i></a>
+                <a href="https://x.com/sabhani_meet?t=Tj6ZNShhwo1G6yYfjRT1qg&s=09" target="_blank"><i
+                    class="ri-twitter-x-fill"></i></a>
+              </div>
+            </div>
+            <div class="Contact-Right">
+              <form action="" name="submit-to-google-sheet">
+                <input type="text" name="Name" placeholder="Your Name" required>
+                <input type="email" name="Email" placeholder="Your Email" required>
+                <textarea name="Message" rows="6" placeholder="Your Massage"></textarea>
+                <button type="submit" class="btn btn2">Submit</button>
+              </form>
+              <span id="msg" style="margin-top: -40px;"></span>
+            </div>
+          </div>
+        </div>
+        <div class="conpyright">Copyright &copy; Meet. Made with <i class="ri-heart-fill"></i> by Meet Sabhani</div>
+      </div>
     <script src="sript.js"></script>
 </body>
 
